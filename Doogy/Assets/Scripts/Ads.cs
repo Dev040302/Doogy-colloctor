@@ -5,11 +5,19 @@ using GoogleMobileAds.Api;
 
 public class Ads : MonoBehaviour
 {
+    public static Ads Instance;
     private BannerView bannerView;
 
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
 
         MobileAds.Initialize(initStatus => { });
 
