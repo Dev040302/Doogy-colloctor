@@ -60,6 +60,7 @@
     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\UnityAds\UnityAds.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\UnityAds\UnityAdsClient.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\Externs.cs" />
+    <Compile Include="Assets\Scripts\Ads.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-6.1.2_manifest.txt" />
