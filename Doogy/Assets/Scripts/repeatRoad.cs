@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class repeatRoad : MonoBehaviour
 {
-    private Vector3 StartPos;
+    public Vector3 StartPos;
     public float repeatWidth;
     // Start is called before the first frame update
     void Start()

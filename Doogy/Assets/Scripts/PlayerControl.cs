@@ -27,5 +27,12 @@ public class PlayerControl : MonoBehaviour
         {
             transform.Translate(Vector3.left * Time.deltaTime * turnspeed * horizontalInput);
         }
+        if (gameObject.CompareTag("Respawn"))
+        {
+            if (transform.position.z < -10)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

@@ -55,16 +55,17 @@
   <ItemGroup>
     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\IUnityAdsClient.cs" />
     <Compile Include="Assets\GoogleMobileAds\Common\Mediation\UnityAds\DummyClient.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\Mediation\UnityAdsClientFactory.cs" />
+    <Compile Include="Assets\Scripts\essen.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\UnityAdsClient.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\UnityAds\UnityAds.cs" />
+    <Compile Include="Assets\Scripts\repeatRoad.cs" />
     <Compile Include="Assets\Scripts\Ads.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Mediation\UnityAds\UnityAdsClient.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Mediation\UnityAds\Externs.cs" />
-    <Compile Include="Assets\Scripts\essen.cs" />
-    <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\repeatRoad.cs" />
+    <Compile Include="Assets\Scripts\Spawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-6.1.2_manifest.txt" />
