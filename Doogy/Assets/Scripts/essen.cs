@@ -5,7 +5,7 @@ using UnityEngine;
 public class essen : MonoBehaviour
 {
     public static essen Instance;
-    public float speed = 20.0f;
+    public float speed = 20.0f,forward,horizondal;
     public int type = 1;
     public bool gameactive = false;
 
