@@ -97,6 +97,7 @@ public class UI : MonoBehaviour
     {
         if (x == 1)
         {
+            pg.gameactive = true;
             SceneManager.LoadScene("Prototype 1");
         }
         else

@@ -225,7 +225,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_Name
-      value: Veh_Car_Blue_Z
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_RootOrder
@@ -294,6 +298,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &812390323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812390321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37bb0bc45c18c049b1144ba44f153a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &861847373
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +385,7 @@ MonoBehaviour:
   - {fileID: 515175755739571116, guid: 46f9eda5f45584fb3ad05abcd7af6df2, type: 3}
   - {fileID: 5924013827781158161, guid: cdcb19fde9e8cba40b7bff849baf2c1b, type: 3}
   x: 0
+  count: 0
 --- !u!1001 &974359749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,6 +697,7 @@ MonoBehaviour:
   horizontalInput: 0
   forwardinput: 0
   turnspeed: 0
+  car: {fileID: 0}
 --- !u!54 &1720006905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -770,6 +788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8101220662684030210, guid: cb04eea70ee14ab49b68d12e2cbbf680, type: 3}
+      propertyPath: car
+      value: 
+      objectReference: {fileID: 812390321}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb04eea70ee14ab49b68d12e2cbbf680, type: 3}
 --- !u!1001 &3858995681538707564
