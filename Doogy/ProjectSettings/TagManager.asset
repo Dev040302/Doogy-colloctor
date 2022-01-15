@@ -7,6 +7,8 @@ TagManager:
   - essentials
   - Coin
   - Coins
+  - Buttons
+  - Tild
   layers:
   - Default
   - TransparentFX

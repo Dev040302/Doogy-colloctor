@@ -1,4 +1,0 @@
-#Thu Jan 13 20:52:12 IST 2022
-base.0=D\:\\Unity Games\\Doogy-colloctor\\Doogy\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

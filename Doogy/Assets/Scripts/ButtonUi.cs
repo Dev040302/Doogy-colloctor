@@ -11,9 +11,13 @@ public class ButtonUi : MonoBehaviour
     void Start()
     {
         pg = (GameObject.Find("essentials")).GetComponent<essen>();
+        if (pg.type == 2)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         pg.forward = forward;
         pg.horizondal = horizondal;
