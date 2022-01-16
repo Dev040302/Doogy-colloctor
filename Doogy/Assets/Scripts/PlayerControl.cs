@@ -19,8 +19,12 @@ public class PlayerControl : MonoBehaviour
     {
         if (pg.gameactive)
         {
-            horizontalInput = pg.horizondal;
-            forwardinput = pg.forward;
+            //horizontalInput = pg.horizondal;
+            //forwardinput = pg.forward;
+
+
+            horizontalInput = Input.GetAxis("Horizontal");
+            forwardinput = Input.GetAxis("Vertical");
 
             transform.Translate(Vector3.back * Time.deltaTime * speed * forwardinput);
             if (forwardinput != 0.0f)

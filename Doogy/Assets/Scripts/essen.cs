@@ -6,8 +6,9 @@ public class essen : MonoBehaviour
 {
     public static essen Instance;
     public float speed = 20.0f,forward=0.0f,horizondal=0.0f;
-    public int type = 1;
+    public int type = 1,score=0;
     public bool gameactive = false;
+    public GameObject hiten=null;
 
     void Awake()
     {

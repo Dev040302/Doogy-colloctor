@@ -6,10 +6,12 @@ public class car : MonoBehaviour
 {
     essen pg;
     float horizontalInput, forwardinput;
+    public GameObject end,Ad;
     // Start is called before the first frame update
     void Start()
     {
         pg = (GameObject.Find("essentials")).GetComponent<essen>();
+        end.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class car : MonoBehaviour
         }
         else
         {
-            if (forwardinput != 0.0f && pg.gameactive) {
+            if (forwardinput != 0.0f && pg.gameactive && pg.type==1) {
 
                 if (horizontalInput == 0.0f)
                 {
@@ -36,6 +38,11 @@ public class car : MonoBehaviour
                 } 
             }
         }
+
+        if (gameObject.transform.position.y < -5)
+        {
+            Destroy(gameObject);
+        }
         
     }
 
@@ -44,10 +51,19 @@ public class car : MonoBehaviour
         if (other.gameObject.CompareTag("Respawn"))
         {
             pg.gameactive = false;
+            end.SetActive(true);
+            pg.hiten = other.gameObject;
         }
         if (other.gameObject.CompareTag("Coins"))
         {
+            pg.score = pg.score + 1;
             Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Finish")) {
+            pg.gameactive = false;
+            end.SetActive(true);
+            Ad.SetActive(false);
+        }
+
     }
 }

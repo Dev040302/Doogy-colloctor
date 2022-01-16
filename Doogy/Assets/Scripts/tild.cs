@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class tild : MonoBehaviour
 {
     public float forward = 0.0f, horizondal = 0.0f;
     bool up = false;
+    public Text score;
     essen pg;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class tild : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        score.text = "Score\n" + pg.score;
+
         pg.forward = forward;
         pg.horizondal = horizondal;
         if (up && forward != 1.0f)

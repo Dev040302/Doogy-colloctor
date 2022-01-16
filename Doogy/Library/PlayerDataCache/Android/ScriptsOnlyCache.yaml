@@ -2,9 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonUi
+    - EndUI
     - PlayerControl
     - Spawn
     - UI
+    - ads
     - car
     - essen
     - repeatRoad
@@ -15,6 +17,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -22,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Slider
@@ -62,32 +68,38 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 1892}
+      Script: {instanceID: 1824}
     - Class: 114
-      Script: {instanceID: 1934}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 2416}
+      Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2520}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 2562}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2676}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2766}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3908}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 17224}
+      Script: {instanceID: 2944}
+    - Class: 114
+      Script: {instanceID: 3500}
+    - Class: 114
+      Script: {instanceID: 3986}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -129,31 +141,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 1708}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1762}
+      Script: {instanceID: 1676}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 1688}
+    - Class: 114
+      Script: {instanceID: 2058}
+    - Class: 114
+      Script: {instanceID: 2148}
     - Class: 114
       Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2242}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 2416}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2520}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2676}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 3554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,7 +261,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3417f9495997cdb669c13ffda51d7dfd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: car
@@ -281,7 +297,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: 385e01e293aea07164ce4e776541a163
+      Hash: 32c0bda1386ee4c08e4c309883502784
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: essen
@@ -291,6 +307,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -317,6 +339,12 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -341,10 +369,16 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: f094a4c42386c4924f130171703aedee
+      Hash: 6ed9a0883d154cd8955db70781139e09
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonUi
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -357,6 +391,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 6ed9a0883d154cd8955db70781139e09
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: tild
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -387,6 +427,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: repeatRoad
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb2b962a48d2f6039fa9915b7639cc3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndUI
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -462,6 +508,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
@@ -471,6 +523,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -525,6 +583,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: a4ab59432e1a3dc5dedbe8c4cf11d8ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ads
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -617,6 +681,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SSTools
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -639,12 +709,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: f094a4c42386c4924f130171703aedee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: tild
   platform: 13
   scenePathNames:
   - Assets/Scenes/Start.unity
