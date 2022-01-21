@@ -8,7 +8,7 @@ public class EndUI : MonoBehaviour
 {
     essen pg;
     ads ad;
-    public Text score;
+    public Text score;    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +28,20 @@ public class EndUI : MonoBehaviour
     }
     public void Restart()
     {
-        pg.score = 0;
+        
         pg.gameactive = true;
+        pg.score = 0;
         SceneManager.LoadScene("Prototype 1");
 
+
     }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(4);
+    }
+
+    
 
     public void back()
     {

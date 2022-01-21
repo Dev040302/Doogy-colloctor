@@ -37,7 +37,7 @@ public class tild : MonoBehaviour
             if (forward < 0.0f) { forward = 0.0f; }
         }
 
-        horizondal = (Input.acceleration.x)*4;
+        horizondal = (Input.acceleration.x)*3;
     }
     public void press()
     {

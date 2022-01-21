@@ -8,7 +8,7 @@ public class UI : MonoBehaviour
 {
     public GameObject settings,OptionWindow;
     public bool options = false;
-    public Text diff;
+    public Text diff,HS;
     public Toggle tild, btn;
     essen pg;
 
@@ -16,12 +16,14 @@ public class UI : MonoBehaviour
     void Start()
     {
         pg = (GameObject.Find("essentials")).GetComponent<essen>();
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        HS.text = "High Score\n" + pg.HS;
     }
 
     public void OptionTrigger()

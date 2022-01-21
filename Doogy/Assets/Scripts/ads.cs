@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ public class ads : MonoBehaviour,IUnityAdsListener
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
     }
     void Start()
     {
@@ -64,15 +65,15 @@ public class ads : MonoBehaviour,IUnityAdsListener
 
     }
 
-    public void OnUnityAdsReady(string placementId){}
+    public void OnUnityAdsReady(string placementId) { }
 
-    public void OnUnityAdsDidError(string message){}
+    public void OnUnityAdsDidError(string message) { }
 
-    public void OnUnityAdsDidStart(string placementId){}
+    public void OnUnityAdsDidStart(string placementId) { }
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
-        if(placementId == "Rewarded_Android" && showResult == ShowResult.Finished)
+        if (placementId == "Rewarded_Android" && showResult == ShowResult.Finished)
         {
             endui.SetActive(false);
             Destroy(pg.hiten);
@@ -80,4 +81,6 @@ public class ads : MonoBehaviour,IUnityAdsListener
 
         }
     }
+
+   
 }
