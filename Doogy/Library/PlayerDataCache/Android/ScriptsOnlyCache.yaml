@@ -17,9 +17,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -71,35 +68,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1796}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2320}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2466}
+      Script: {instanceID: 2470}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2578}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 2672}
     - Class: 114
-      Script: {instanceID: 2708}
+      Script: {instanceID: 2712}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2832}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 3352}
     - Class: 114
-      Script: {instanceID: 3804}
+      Script: {instanceID: 3808}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -152,33 +149,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 2014}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2104}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2150}
+      Script: {instanceID: 2154}
     - Class: 114
-      Script: {instanceID: 2320}
+      Script: {instanceID: 2324}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2366}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2578}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2754}
     - Class: 114
-      Script: {instanceID: 2832}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 3352}
     - Class: 114
-      Script: {instanceID: 3402}
+      Script: {instanceID: 3406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -632,4 +629,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Prototype 1.unity
-  playerPath: D:/Unity Games/Doogy-colloctor/Doogy/test.apk
+  playerPath: D:/Unity Games/Doogy-colloctor/Doogy/apk.aab

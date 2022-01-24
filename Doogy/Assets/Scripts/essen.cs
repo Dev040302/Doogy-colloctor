@@ -29,7 +29,7 @@ public class essen : MonoBehaviour
 
     private void Start()
     {
-        HS = 0;
+        
     }
 
     // Update is called once per frame
